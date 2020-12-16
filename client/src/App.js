@@ -1,10 +1,13 @@
 import React from "react";
 import "./App.css";
+import Header from './components/header/Header'
 
 function App() {
   return (
     <div className="app">
-      <h1>Swifts</h1>
+      <Header />
+
+      <hr></hr>
     </div>
   );
 }
