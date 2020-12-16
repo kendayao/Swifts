@@ -29,7 +29,7 @@
     font-size: 50px;
     color:white;
     font-weight: 800;
-    animation: moveInLeft 4s ease-in 2s;
+    animation: moveInLeft 4s ease-in 1.5s;
     animation-fill-mode: backwards;
 }
 
@@ -37,7 +37,7 @@
     font-size: 50px;
     color:white;
     font-weight: 800;
-    animation: moveInRight 4s ease-in 4s;
+    animation: moveInRight 3s ease-out 5s;
     animation-fill-mode: backwards;
 }
 
@@ -50,7 +50,7 @@
     font-weight: 500;
     margin-top: 20px;
     border: none;
-    animation: moveUp 3s ease-in 5s;
+    animation: moveUp 3s ease-out 7s;
     animation-fill-mode: backwards;
 }
 

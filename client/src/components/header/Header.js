@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className='header'>
             <div className='header__SectionOne'>
-                <img className='header__logo' src="../../logo/swifts-logo.png" alt="logo" />
+                <img className='header__logo' src="../../logo/swifts-logo-one.png" alt="logo" />
                 <div className='header__cartIcon'>
                     <div>
                     <ShoppingCartOutlinedIcon />    

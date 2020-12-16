@@ -11,7 +11,7 @@ function Banner() {
                 </video>
                 <div className='banner__contents'>
                     <h1 className="banner__header">EXPERIENCE COMFORT</h1>
-                    <h1 className="banner__subheader">DURING WORKOUTS</h1>
+                    <h1 className="banner__subheader">WITH SWIFTS</h1>
                     <button className="banner__button">Shop Now</button>
                 </div>
                 
