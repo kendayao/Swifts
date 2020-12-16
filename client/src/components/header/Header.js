@@ -19,14 +19,14 @@ function Header() {
            
             <div className='header__SectionTwo'>
                 <div className='header__navs'>
-                    <span>Home</span>
-                    <span>Shop</span>
-                    <span>About Us</span>
-                    <span>Contact</span>
+                    <span>HOME</span>
+                    <span>SHOP</span>
+                    <span>ABOUT US</span>
+                    <span>CONTACT</span>
                     <span>FAQ</span>
                 </div>
                 <div className='header__login'>
-                    <span>Account</span>
+                    <span>ACCOUNT</span>
                 </div>
             </div>
         </div>
