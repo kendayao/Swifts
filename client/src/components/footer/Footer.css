@@ -1,0 +1,35 @@
+.footer{
+    background-color: black;
+    margin-top: 20px;
+    padding-top: 50px;
+}
+
+.footer__topSection{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.footer__contact h4,
+.footer__support h4,
+.footer__about h4{
+    margin-bottom: 25px;
+    color: white;
+    font-weight: 400;
+    
+}
+
+.footer__contact p,
+.footer__support p,
+.footer__about p{
+    margin-bottom: 15px;
+    color: rgb(128, 128, 128);
+    font-size: 13px;
+}
+
+.footer__bottomSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(128, 128, 128);
+}

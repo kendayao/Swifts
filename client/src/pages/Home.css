@@ -1,8 +1,7 @@
 .home__body{
-    max-width: 1500;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .home__row{
@@ -13,16 +12,18 @@
 .home__category img{
     width: 100%;
     filter:brightness(75%);
+    object-fit: contain;
  
 }
 
 .home__category:nth-child(even){
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .home__category{
     position: relative;
+    width: 100%;
 }
 
 .home__category p{
@@ -35,4 +36,9 @@
     font-size: 25px;
     font-weight: 600;
     z-index: 1
+}
+
+.home__category:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }

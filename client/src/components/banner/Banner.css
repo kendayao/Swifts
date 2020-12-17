@@ -31,6 +31,7 @@
     font-weight: 800;
     animation: moveInLeft 4s ease-in 1.5s;
     animation-fill-mode: backwards;
+    letter-spacing: 1px;
 }
 
 .banner__subheader{
@@ -39,6 +40,9 @@
     font-weight: 800;
     animation: moveInRight 3s ease-out 5s;
     animation-fill-mode: backwards;
+    letter-spacing: 1px;
+    margin-top: 10px
+
 }
 
 .banner__button{
@@ -50,7 +54,7 @@
     font-weight: 500;
     margin-top: 20px;
     border: none;
-    animation: moveUp 3s ease-out 7s;
+    animation: moveUp 2s ease-out 6s;
     animation-fill-mode: backwards;
 }
 
