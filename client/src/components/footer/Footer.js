@@ -24,10 +24,9 @@ function Footer() {
                     <p>Contact</p>
                 </div>
             </div>
-            <hr />
+
             <div className='footer__bottomSection'>
                 <p>&#169;2020, Swifts</p>
-                <p>credit card icon</p>
             </div>
 
         </div>

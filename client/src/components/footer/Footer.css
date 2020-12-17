@@ -6,7 +6,7 @@
 
 .footer__topSection{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-bottom: 30px;
 }
 
@@ -28,8 +28,12 @@
 }
 
 .footer__bottomSection{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: rgb(128, 128, 128);
+    text-align: center;
+    color:rgb(128, 128, 128);
+    border-top: 1px solid rgba(128, 128, 128, 0.44);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px
 }
+
+

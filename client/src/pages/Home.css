@@ -6,8 +6,13 @@
 
 .home__row{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    overflow-x: scroll;
 }
+
+.home__row::-webkit-scrollbar {
+    display: none;
+  }
 
 .home__category img{
     width: 100%;
@@ -41,4 +46,23 @@
 .home__category:hover{
     opacity: 0.5;
     cursor: pointer;
+}
+
+.home__preview{
+    margin-top: 45px;
+    margin-bottom: 90px;
+}
+
+.home__preview-title > p{
+    font-size: 22px;
+}
+
+.home__preview-title p:last-child{
+    font-size: 14px;
+}
+
+.home__preview-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
