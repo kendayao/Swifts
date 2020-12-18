@@ -1,0 +1,10 @@
+.collectionsOverview{
+    display:flex;
+    flex-direction: column;
+}
+
+.collectionsOverview > img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}

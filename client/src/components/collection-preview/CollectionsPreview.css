@@ -1,0 +1,28 @@
+.collectionsPreview{
+    display:flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.collectionPreview__heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px
+}
+
+.collectionPreview__heading > p{
+    font-size: 22px;
+}
+
+.collectionPreview__heading p:last-child{
+    font-size: 16px;
+    margin-right: 60px;
+}
+
+.collectionsPreview__row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 45px;
+}

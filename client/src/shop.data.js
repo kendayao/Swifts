@@ -148,13 +148,6 @@ const SHOP_DATA={
                 price: '$19.99'
             },
             {
-                productId: 22,
-                name: 'Sliders Red',
-                color: 'Red',
-                image: 'slip3-red',
-                price: '$19.99'
-            },
-            {
                 productId: 23,
                 name: 'Downtown Black',
                 color: 'Black',

@@ -5,7 +5,7 @@ function Banner() {
     return (
         <div className='banner'>
             <div className="banner__ad">
-                <video className="banner__video" autoPlay muted>
+                <video className="banner__video" muted>
                     <source src='../../images/swifts-ad.mp4' type='video/mp4'/>
                     video is not supported
                 </video>
