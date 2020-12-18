@@ -1,6 +1,7 @@
 import React from 'react'
 import './CollectionsPreview.css'
 import Card from '../card/Card'
+import {Link} from 'react-router-dom'
 
 
 function CollectionsPreview({items, routeName, title}) {
@@ -9,7 +10,7 @@ function CollectionsPreview({items, routeName, title}) {
         <div className='collectionsPreview'>
             <div className='collectionPreview__heading'>
                 <p>{title}</p>
-                <p>Shop All {title}</p>
+                <Link className='collectionPreview__link' to={`shop/${routeName}`}>Shop All {title}</Link>
             </div>
             <div className='collectionsPreview__row'>
                 {items.filter((item,index)=>index<4).map((item)=>(

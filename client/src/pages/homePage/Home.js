@@ -4,6 +4,7 @@ import Banner from '../../components/banner/Banner'
 import Card from '../../components/card/Card'
 import {connect} from 'react-redux'
 import {selectCollections} from '../../redux/shop/shop.selectors'
+import {Link} from 'react-router-dom'
 
 function Home({collections}) {
     const topSellers=collections['topSellers'].items
@@ -31,7 +32,7 @@ function Home({collections}) {
                 <div className='home__preview'>
                     <div className='home__preview-title'>
                         <p>Top Sellers</p>
-                        <p>Shop All</p>
+                        <Link to='/shop'>Shop All</Link>
                     </div>
                     <div className='home__row'>
                         {topSellers.map(item=>(
