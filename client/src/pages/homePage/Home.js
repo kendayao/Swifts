@@ -1,12 +1,12 @@
 import React from 'react'
 import './Home.css'
-import Banner from '../components/banner/Banner'
-import Card from '../components/card/Card'
-import SHOP_DATA from '../shop.data'
+import Banner from '../../components/banner/Banner'
+import Card from '../../components/card/Card'
+import {connect} from 'react-redux'
+import {selectCollections} from '../../redux/shop/shop.selectors'
 
-function Home() {
-
-    const topSellers=SHOP_DATA['topSellers'].items
+function Home({collections}) {
+    const topSellers=collections['topSellers'].items
     return (
         <div className='home'>
             <Banner />
@@ -51,4 +51,9 @@ function Home() {
     )
 }
 
-export default Home
+
+const mapStateToProps=(state)=>({
+    collections: selectCollections(state)
+})
+
+export default connect(mapStateToProps)(Home)

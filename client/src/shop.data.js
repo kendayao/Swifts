@@ -8,6 +8,7 @@ const SHOP_DATA={
                 productId: 1,
                 name: 'C2 Swifts Black',
                 color: 'Black',
+                route: 'c2-swifts-black',
                 image: 'shoe1-black',
                 price: '$39.99'
             },
@@ -15,6 +16,7 @@ const SHOP_DATA={
                 productId: 2,
                 name: 'C2 Swifts White',
                 color: 'White',
+                route: 'c2-swifts-white',
                 image: 'shoe1-white',
                 price: '$39.99'
             },
@@ -22,6 +24,7 @@ const SHOP_DATA={
                 productId: 3,
                 name: 'C2 Swifts Red',
                 color: 'Red',
+                route: 'c2-swifts-red',
                 image: 'shoe1-red',
                 price: '$39.99'
             },

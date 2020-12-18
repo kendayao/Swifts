@@ -12,7 +12,7 @@ function Header() {
                     <ShoppingCartOutlinedIcon />    
                     </div>
                     <div>
-                        <spann>0</spann>
+                        <span>0</span>
                     </div>
                 </div>
             </div>
