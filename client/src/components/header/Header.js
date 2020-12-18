@@ -20,14 +20,13 @@ function Header() {
                     </div>
                 </div>
             </div>
-           
             <div className='header__SectionTwo'>
                 <div className='header__navs'>
-                    <span>HOME</span>
-                    <span>SHOP</span>
-                    <span>ABOUT US</span>
-                    <span>CONTACT</span>
-                    <span>FAQ</span>
+                    <Link to='/' className='header__link'>HOME</Link>
+                    <Link to='/shop' className='header__link'>SHOP</Link>
+                    <Link className='header__link'>ABOUT US</Link>
+                    <Link className='header__link'>CONTACT</Link>
+                    <Link className='header__link'>FAQ</Link>
                 </div>
                 <div className='header__login'>
                     <span>ACCOUNT</span>

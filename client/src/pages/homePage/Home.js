@@ -7,6 +7,7 @@ import {selectCollections} from '../../redux/shop/shop.selectors'
 import {Link} from 'react-router-dom'
 
 function Home({collections}) {
+
     const topSellers=collections['topSellers'].items
     return (
         <div className='home'>
@@ -16,15 +17,21 @@ function Home({collections}) {
                 <div className='home__row'>
                     <div className='home__category'>
                         <p>CASUAL</p>
-                        <img src='../../images/casual.png' alt='casual shoe'/>
+                        <Link to='/shop/casual'>
+                            <img className='home__category-image' src='../../images/casual.png' alt='casual shoe'/>
+                        </Link>
                     </div>
                     <div className='home__category'>
                         <p>FITNESS</p>
-                        <img src='../../images/fitness.png' alt='fitness shoe'/>
+                        <Link to='/shop/fitness'>
+                            <img className='home__category-image'  src='../../images/fitness.png' alt='fitness shoe'/>
+                        </Link>
                     </div>
                     <div className='home__category'>
                         <p>RUNNING</p>
-                        <img src='../../images/running.png' alt='running shoe'/>
+                        <Link to='/shop/running'>
+                        <img className='home__category-image' src='../../images/running.png' alt='running shoe'/>
+                        </Link>
                     </div>
                 </div>
 
@@ -32,7 +39,7 @@ function Home({collections}) {
                 <div className='home__preview'>
                     <div className='home__preview-title'>
                         <p>Top Sellers</p>
-                        <Link to='/shop'>Shop All</Link>
+                        <Link className='home__preview-link' to='/shop'>Shop All</Link>
                     </div>
                     <div className='home__row'>
                         {topSellers.map(item=>(

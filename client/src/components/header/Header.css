@@ -27,8 +27,20 @@
     margin-bottom: 15px;
 }
 
-.header__navs span:not(:last-child){
-    padding-right: 30px;
+.header__link{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: all .3s;
+}
+
+.header__link:hover{
+    background-color: black;
+    color: white;
+}
+
+.header__navs .header__link:not(:last-child){
+    margin-right: 20px;
 }
 
 .header__navs{

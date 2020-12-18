@@ -14,7 +14,7 @@
     display: none;
   }
 
-.home__category img{
+.home__category-image{
     width: 100%;
     filter:brightness(75%);
     object-fit: contain;
@@ -65,4 +65,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.home__preview-link{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: all .3s;
+}
+
+.home__preview-link:hover{
+    background-color: black;
+    color:white;
 }

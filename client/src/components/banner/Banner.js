@@ -1,7 +1,11 @@
 import React from 'react';
 import './Banner.css';
+import { useHistory } from "react-router-dom";
 
 function Banner() {
+
+    const history = useHistory();
+
     return (
         <div className='banner'>
             <div className="banner__ad">
@@ -12,7 +16,7 @@ function Banner() {
                 <div className='banner__contents'>
                     <h1 className="banner__header">EXPERIENCE COMFORT</h1>
                     <h1 className="banner__subheader">WITH SWIFTS</h1>
-                    <button className="banner__button">Shop Now</button>
+                    <button className="banner__button" onClick={e=>history.push('/shop')}>Shop Now</button>
                 </div>
                 
             </div>
