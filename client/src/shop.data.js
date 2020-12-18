@@ -41,7 +41,7 @@ const SHOP_DATA={
             },
             {
                 productId: 6,
-                name: 'maxSwifts Black-Red',
+                name: 'Max Swifts Black-Red',
                 color: 'Black-Red',
                 image: 'shoe2-red',
                 price: '$59.99'
@@ -69,24 +69,17 @@ const SHOP_DATA={
             },
             {
                 productId: 10,
-                name: 'Comfers Black',
-                color: 'Black',
-                image: 'shoe4-black',
-                price: '$36.99'
+                name: 'Comfers White',
+                color: 'White',
+                image: 'shoe4-white',
+                price: '$34.99'
             },
             {
                 productId: 11,
                 name: 'Comfers Blue',
                 color: 'Blue',
                 image: 'shoe4-blue',
-                price: '$36.99'
-            },
-            {
-                productId: 12,
-                name: 'Comfers White',
-                color: 'White',
-                image: 'shoe4-white',
-                price: '$36.99'
+                price: '$34.99'
             }
         ]
     },
@@ -129,21 +122,7 @@ const SHOP_DATA={
                 color: 'Green',
                 image: 'fitness2-green',
                 price: '$42.99'
-            },
-            {
-                productId: 18,
-                name: 'Swifters Black',
-                color: 'Black',
-                image: 'fitness1-black',
-                price: '$29.99'
-            },
-            {
-                productId: 19,
-                name: 'Swifters Red',
-                color: 'Red',
-                image: 'fitness1-red',
-                price: '$29.99'
-            }   
+            }
         ]
     },
     slipOns:{
@@ -299,13 +278,6 @@ const SHOP_DATA={
                 price: '$39.99'
             },
             {
-                productId: 14,
-                name: 'Gymer Pink',
-                color: 'Pink',
-                image: 'fitness2-pink',
-                price: '$42.99'
-            },
-            {
                 productId: 3,
                 name: 'C2 Swifts Red',
                 color: 'Red',
@@ -313,19 +285,33 @@ const SHOP_DATA={
                 price: '$39.99'
             },
             {
-                productId: 10,
-                name: 'Comfers Black',
-                color: 'Black',
-                image: 'shoe4-black',
-                price: '$36.99'
+                productId: 2,
+                name: 'C2 Swifts White',
+                color: 'White',
+                image: 'shoe1-white',
+                price: '$39.99'
             },
             {
-                productId: 4,
-                name: 'Max Swifts Black',
-                color: 'Black',
-                image: 'shoe2-black',
-                price: '$59.99'
+                productId: 10,
+                name: 'Comfers White',
+                color: 'White',
+                image: 'shoe4-white',
+                price: '$34.99'
             },
+            {
+                productId: 14,
+                name: 'Gymer Pink',
+                color: 'Pink',
+                image: 'fitness2-pink',
+                price: '$42.99'
+            },
+            {
+                productId: 11,
+                name: 'Comfers Blue',
+                color: 'Blue',
+                image: 'shoe4-blue',
+                price: '$34.99'
+            }
 
         ]
     }

@@ -8,7 +8,7 @@ import SHOP_DATA from '../shop.data'
 
 function Home() {
 
-    const topSellers=SHOP_DATA['casual'].collections['topSellers'].items
+    const topSellers=SHOP_DATA['topSellers'].items
     return (
         <div className='home'>
             <Header />
