@@ -128,10 +128,10 @@ const SHOP_DATA={
             }
         ]
     },
-    slipOns:{
+    slip_ons:{
         categoryId: 3,
         title: 'Slip-Ons',
-        routeName:'slip-ons',
+        routeName:'slip_ons',
         items:[
             {
                 productId: 20,
@@ -163,7 +163,7 @@ const SHOP_DATA={
             }
         ]  
     },
-    runners:{
+    running:{
         categoryId: 4,
         title: 'Running',
         routeName:'running',
