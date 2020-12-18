@@ -1,8 +1,6 @@
 import React from 'react'
 import './Home.css'
-import Header from '../components/header/Header'
 import Banner from '../components/banner/Banner'
-import Footer from '../components/footer/Footer'
 import Card from '../components/card/Card'
 import SHOP_DATA from '../shop.data'
 
@@ -11,7 +9,6 @@ function Home() {
     const topSellers=SHOP_DATA['topSellers'].items
     return (
         <div className='home'>
-            <Header />
             <Banner />
 
             <div className='home__body'>
@@ -50,7 +47,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     )
 }
