@@ -4,8 +4,11 @@ import Header from '../components/header/Header'
 import Banner from '../components/banner/Banner'
 import Footer from '../components/footer/Footer'
 import Card from '../components/card/Card'
+import SHOP_DATA from '../shop.data'
 
 function Home() {
+
+    const topSellers=SHOP_DATA['casual'].collections['topSellers'].items
     return (
         <div className='home'>
             <Header />
@@ -34,12 +37,16 @@ function Home() {
                         <p>Shop All</p>
                     </div>
                     <div className='home__row'>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
+                        {topSellers.map(item=>(
+                            <Card 
+                                key={item.productId}
+                                name={item.name}
+                                color={item.color}
+                                image={item.image}
+                                price={item.price}
+                            />
+                        ))}
+                        
                     </div>
                 </div>
             </div>
