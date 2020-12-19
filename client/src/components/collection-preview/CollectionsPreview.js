@@ -18,7 +18,8 @@ function CollectionsPreview({items, routeName, title}) {
                     key={item.productId}
                     image={item.image}
                     name={item.name}
-                    price={item.price} 
+                    price={item.price}
+                    route={item.route}
                     />
                 ))}
             </div>

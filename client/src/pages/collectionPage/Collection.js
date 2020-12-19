@@ -19,6 +19,7 @@ function Collection({collections}) {
                         name={item.name}
                         price={item.price}
                         image={item.image}
+                        route={item.route}
                     />
                 ))}
           

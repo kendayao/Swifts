@@ -49,6 +49,7 @@ function Home({collections}) {
                                 color={item.color}
                                 image={item.image}
                                 price={item.price}
+                                route={item.route}
                             />
                         ))}
                         
