@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './Item.css'
 import {connect} from 'react-redux'
 import {selectCollections} from '../../redux/shop/shop.selectors'
-import {useParams} from 'react-router-dom'
+import {useParams, useHistory} from 'react-router-dom'
 
 function Item({collections}) {
     const [size, setSize]=useState(6);
@@ -10,7 +10,7 @@ function Item({collections}) {
 
     const { ItemId }=useParams();
     const { CollectionId }=useParams();
-
+    const history=useHistory();
     const collectionItems=collections[CollectionId]
     const product=collectionItems.items.find(item=>ItemId===item.refName)
     console.log(product.image)
@@ -18,6 +18,8 @@ function Item({collections}) {
     console.log(quantity)
     return (
         <div className='item'>
+                
+  
             <div className='item__sectionLeft'>
                 <img className='item__image' src={`../../images/${product.image}.png`} alt='product'/>
             </div>
@@ -52,6 +54,7 @@ function Item({collections}) {
 
 
                 <button className='item__button'>Add to cart</button>
+                <p className='item__link' onClick={()=>history.goBack()}>Go back to previous page</p>
             </div>
            
            

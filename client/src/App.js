@@ -8,12 +8,13 @@ import Shop from './pages/shopPage/Shop'
 import ScrollToTop from './components/scroll/ScrollToTop'
 import Collection from './pages/collectionPage/Collection'
 import Item from './pages/itemPage/Item'
+import About from './pages/aboutPage/About'
 
 function App() {
   return (
     <div className="app">
       <Switch>
-      < Route path='/shop/:CollectionId/:ItemId'>
+      <Route path='/shop/:CollectionId/:ItemId'>
           <ScrollToTop />
           <Header/>
             <Item/>
@@ -29,6 +30,12 @@ function App() {
           <ScrollToTop />
           <Header/>
             <Shop/>
+          <Footer/>
+        </Route>
+        < Route path='/about'>
+          <ScrollToTop />
+          <Header/>
+            <About/>
           <Footer/>
         </Route>
         <Route path="/">

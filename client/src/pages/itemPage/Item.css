@@ -56,7 +56,7 @@
  }
 
  .item__select{
-     font-size: 18px;
+     font-size: 14px;
      width: 50px;
      margin-top: 30px;
      padding: 2px
@@ -66,4 +66,11 @@
  .item__select:focus{
    outline: none;
     
+}
+
+.item__link{
+    margin-top: 25px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px; 
 }
