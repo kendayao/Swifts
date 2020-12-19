@@ -16,20 +16,20 @@ function Home({collections}) {
             <div className='home__body'>
                 <div className='home__row'>
                     <div className='home__category'>
-                        <p>CASUAL</p>
                         <Link to='/shop/casual'>
+                            <p>CASUAL</p>
                             <img className='home__category-image' src='../../images/casual.png' alt='casual shoe'/>
                         </Link>
                     </div>
                     <div className='home__category'>
-                        <p>FITNESS</p>
                         <Link to='/shop/fitness'>
+                            <p>FITNESS</p>
                             <img className='home__category-image'  src='../../images/fitness.png' alt='fitness shoe'/>
                         </Link>
                     </div>
                     <div className='home__category'>
-                        <p>RUNNING</p>
                         <Link to='/shop/running'>
+                        <p>RUNNING</p>
                         <img className='home__category-image' src='../../images/running.png' alt='running shoe'/>
                         </Link>
                     </div>
