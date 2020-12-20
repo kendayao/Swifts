@@ -8,7 +8,7 @@ import Card from '../../components/card/Card'
 function Collection({collections}) {
     const { CollectionId }=useParams();
     const collectionItems=collections[CollectionId]
-    console.log(collectionItems)
+
     return (
         <div className='collectionPage'>
             <p className='collectionPage__title'>{collectionItems.title}</p>

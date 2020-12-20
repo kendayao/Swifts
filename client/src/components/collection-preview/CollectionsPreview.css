@@ -1,25 +1,24 @@
 .collectionsPreview{
     display:flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-left: 20px;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.55%;
 }
 
 .collectionPreview__heading{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
-    margin-left: 40px;
+    margin-top: 80px;
 }
 
 .collectionPreview__heading > p{
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .collectionPreview__link{
-    font-size: 12px;
-    margin-right: 60px;
+    font-size: 16px;
     text-decoration: none;
     color: black;
     cursor: pointer;
@@ -35,6 +34,10 @@
 .collectionsPreview__row{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 45px;
+    flex-wrap: wrap;
 }
 
+
+/* .home__row::-webkit-scrollbar {
+    display: none;
+  } */

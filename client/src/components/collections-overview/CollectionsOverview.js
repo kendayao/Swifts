@@ -8,7 +8,7 @@ function CollectionsOverview({collections}) {
     console.log(collections)
     return (
         <div className='collectionsOverview'>
-            <img src='../../images/swift-running-ad.png' alt='swift running ad'/>
+            <img src='../../images/swifts-ad-two.png' alt='swift running ad'/>
             {collections.filter((item,index)=>index<4).map(collection=>(
                 <CollectionsPreview 
                 key={collection.categoryId} 

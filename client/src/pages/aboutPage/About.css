@@ -1,0 +1,49 @@
+.about{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.about__logo{
+    text-align: center ;
+    margin-bottom: 40px;
+}
+
+.about__logo > img{
+    width: 250px;
+}
+
+.about__body{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+
+}
+
+.about__header{
+    margin-bottom: 50px;
+
+}
+
+.about__title{
+    font-size: 28px;
+}
+
+.about__paragraph{
+    background-color: rgb(240, 240, 240);
+    padding: 60px;
+}
+
+ul{
+    list-style-type:none
+}
+
+.about__paragraph p:not(:first-child),
+.about__paragraph ul{
+    margin-top: 8px;
+}
+
+.about__paragraph p{
+    margin-bottom: 15px;
+}

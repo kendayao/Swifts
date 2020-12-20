@@ -1,3 +1,7 @@
+.collectionPage{
+    margin-bottom: 80px;
+}
+
 .collectionPage__cards{
     display: flex;
     flex-wrap: wrap;
