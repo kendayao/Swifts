@@ -17,6 +17,7 @@ function Checkout({shoppingCart}) {
                 <div className='checkout__content'>
                     {shoppingCart.map(item=>(
                         <CheckoutItem 
+                            id={item.productId}
                             image={item.image}
                             name={item.name}
                             color={item.color}

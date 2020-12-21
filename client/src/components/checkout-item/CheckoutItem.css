@@ -1,0 +1,22 @@
+.checkoutItem{
+    display: flex;
+    border-bottom: 1px solid #ededed;
+}
+
+.checkoutItem__image{
+    width: 200px;
+}
+
+.checkoutItem__left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.checkoutItem__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1
+}

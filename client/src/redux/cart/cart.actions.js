@@ -3,4 +3,9 @@ export const addToCart=item=>({
     payload: item
 })
 
+export const clearItemFromCart=id=>({
+    type: 'CLEAR_ITEM_FROM_CART',
+    payload: id
+})
+
     
