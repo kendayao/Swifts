@@ -2,8 +2,10 @@ import React from 'react'
 import './Header.css'
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import {Link} from 'react-router-dom'
+import {connect} from 'react-redux'
+import {selectShoppingCart} from '../../redux/cart/cart.selectors'
 
-function Header() {
+function Header({shoppingCart}) {
     return (
         <div className='header'>
             <div className='header__SectionOne'>
@@ -13,10 +15,13 @@ function Header() {
                 
                 <div className='header__cartIcon'>
                     <div>
-                    <ShoppingCartOutlinedIcon />    
+                        <Link to='/checkout'>
+                            <ShoppingCartOutlinedIcon /> 
+                        </Link>
+                       
                     </div>
                     <div>
-                        <span>0</span>
+                        <span>{shoppingCart.length}</span>
                     </div>
                 </div>
             </div>
@@ -36,4 +41,8 @@ function Header() {
     )
 }
 
-export default Header
+const mapStateToProps=state=>({
+    shoppingCart: selectShoppingCart(state)
+})
+
+export default connect(mapStateToProps)(Header)
