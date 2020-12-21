@@ -1,18 +1,27 @@
 .item{
     display: flex;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    flex-wrap: wrap;
+
 }
 
 .item__sectionLeft{
    flex: 0.5;
    text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 20px;
 }
 
 .item__sectionRight{
     flex: 0.5 ;
-    padding-right: 50px;
-
+    max-width: 600px;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 20px;
  }
 
  .item__title{
@@ -73,4 +82,19 @@
     cursor: pointer;
     text-align: center;
     font-size: 13px; 
+}
+
+@media (max-width: 480px){
+    .item{
+        display: flex;
+        
+    }
+
+    .item__image{
+        width: 310px;
+    }
+
+    .item__sectionRight{
+        min-width: 310px;
+    }
 }

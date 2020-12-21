@@ -4,8 +4,6 @@ import './About.css'
 function About() {
     return (
         <div className='about'>
-
-
             <div className='about__logo'>
                 <img src='../../logo/main-swifts-logo.png' alt='swifts logo'/>
             </div>
