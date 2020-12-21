@@ -19,8 +19,8 @@ function Item({collections, addToCart}) {
    
     const item={
         ...product,
-        size: size,
-        quantity: quantity
+        size: parseInt(size),
+        quantity: parseInt(quantity)
        }
  
     

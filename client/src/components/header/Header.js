@@ -3,9 +3,10 @@ import './Header.css'
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
-import {selectShoppingCart} from '../../redux/cart/cart.selectors'
+import {selectShoppingCartCount} from '../../redux/cart/cart.selectors'
 
-function Header({shoppingCart}) {
+
+function Header({shoppingCartCount}) {
     return (
         <div className='header'>
             <div className='header__SectionOne'>
@@ -21,7 +22,7 @@ function Header({shoppingCart}) {
                        
                     </div>
                     <div>
-                        <span>{shoppingCart.length}</span>
+                        <span>{shoppingCartCount}</span>
                     </div>
                 </div>
             </div>
@@ -42,7 +43,7 @@ function Header({shoppingCart}) {
 }
 
 const mapStateToProps=state=>({
-    shoppingCart: selectShoppingCart(state)
+    shoppingCartCount: selectShoppingCartCount(state)
 })
 
 export default connect(mapStateToProps)(Header)
