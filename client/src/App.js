@@ -10,6 +10,7 @@ import Collection from './pages/collectionPage/Collection'
 import Item from './pages/itemPage/Item'
 import About from './pages/aboutPage/About'
 import Checkout from './pages/checkoutPage/Checkout'
+import Terms from './pages/termsPage/Terms'
 
 function App() {
   return (
@@ -37,6 +38,12 @@ function App() {
           <ScrollToTop />
           <Header/>
             <Shop/>
+          <Footer/>
+        </Route>
+        < Route path='/terms'>
+          <ScrollToTop />
+          <Header/>
+            <Terms/>
           <Footer/>
         </Route>
         < Route path='/about'>

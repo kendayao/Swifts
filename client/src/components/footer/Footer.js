@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import {Link} from 'react-router-dom'
 
 function Footer() {
     return (
@@ -13,7 +14,9 @@ function Footer() {
                 </div>
                 <div className='footer__support'>
                     <h4>SUPPORT</h4>
-                    <p>Terms and Conditions</p>
+                    <Link className='footer__link' to='/terms'>
+                        <p>Terms and Conditions</p>
+                    </Link>
                     <p>Privacy Policy</p>
                     <p>Return Policy</p>
                     <p>Frequently Asked Questionss</p>

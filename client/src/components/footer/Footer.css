@@ -19,6 +19,10 @@
     
 }
 
+.footer__link{
+    text-decoration: none;
+}
+
 .footer__contact p,
 .footer__support p,
 .footer__about p{
