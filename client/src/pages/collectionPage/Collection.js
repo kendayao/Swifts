@@ -22,7 +22,6 @@ function Collection({collections}) {
                         route={item.route}
                     />
                 ))}
-          
             </div>
             
         </div>

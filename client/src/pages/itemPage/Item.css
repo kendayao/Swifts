@@ -59,6 +59,10 @@
      cursor: pointer;
  }
 
+ .item__button:focus{
+     outline:none;
+ }
+
  .item__label{
      margin-right: 10px;
      font-size: 18px;

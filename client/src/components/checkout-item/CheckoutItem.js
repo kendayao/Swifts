@@ -6,7 +6,8 @@ import {connect} from 'react-redux'
 
 function CheckoutItem({image, id, name, size, quantity, price, clearItemFromCart, removeItemFromCart,addItemToCart}) {
 
-
+    const itemPrice=quantity*price
+    itemPrice.toFixed(2)
     return (
         <div className='checkoutItem'>
             <div className='checkoutItem__left'>
@@ -17,7 +18,7 @@ function CheckoutItem({image, id, name, size, quantity, price, clearItemFromCart
                 <p className='checkoutItem__name'>{name}</p>
                 <p className='checkoutItem__size'>Size: {size}</p>
                 <p className='checkoutItem__quantity'><span onClick={()=>removeItemFromCart(id)}>&lt;</span> {quantity} <span onClick={()=>addItemToCart(id)}>&gt;</span></p>
-                <p className='checkoutItem__price'>{quantity*price}</p>
+                <p className='checkoutItem__price'>{itemPrice.toFixed(2)}</p>
             </div> 
         </div>
     )

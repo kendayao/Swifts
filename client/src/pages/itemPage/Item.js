@@ -2,10 +2,11 @@ import React, {useState} from 'react'
 import './Item.css'
 import {connect} from 'react-redux'
 import {selectCollections} from '../../redux/shop/shop.selectors'
+import {selectShoppingCart} from '../../redux/cart/cart.selectors'
 import {useParams, useHistory} from 'react-router-dom'
 import {addToCart} from '../../redux/cart/cart.actions'
 
-function Item({collections, addToCart}) {
+function Item({collections, addToCart, shoppingCart}) {
     const [size, setSize]=useState(6);
     const [quantity, setQuantity]=useState(1);
 
@@ -22,6 +23,7 @@ function Item({collections, addToCart}) {
         size: parseInt(size),
         quantity: parseInt(quantity)
        }
+
  
     
     return (
@@ -60,8 +62,10 @@ function Item({collections, addToCart}) {
 
                 </select>
 
-
+                {shoppingCart.some(item=>item.refName===product.refName)?<button className='item__button' onClick={()=>history.push('/checkout')}>Item in cart: click to view cart</button>:
                 <button className='item__button' onClick={()=>addToCart(item)}>Add to cart</button>
+                }
+                
                 <p className='item__link' onClick={()=>history.goBack()}>Go back to previous page</p>
             </div>
            
@@ -76,7 +80,8 @@ const mapDispatchToProps=dispatch=>({
 })
 
 const mapStateToProps=state=>({
-    collections: selectCollections(state)
+    collections: selectCollections(state),
+    shoppingCart: selectShoppingCart(state)
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Item)

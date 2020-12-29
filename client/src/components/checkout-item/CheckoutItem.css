@@ -7,6 +7,16 @@
     width: 200px;
 }
 
+.checkoutItem__button{
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.checkoutItem__button:hover{
+    font-weight: 600;
+}
+
 .checkoutItem__left{
     display: flex;
     flex-direction: column;
