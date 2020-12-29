@@ -16,10 +16,15 @@
     object-fit: contain;
 }
 
-.header__cartIcon{
+.header__cartSection{
     display: flex;
     align-items: center;
 }
+
+.header__cartIcon{
+    color: black;
+}
+
 
 .header__SectionTwo{
     display: flex;
@@ -34,10 +39,18 @@
     transition: all .3s;
 }
 
-.header__link:hover{
+.header__account{
+    cursor: pointer;
+    padding: 5px;
+    transition: all .3s;
+}
+
+.header__link:hover,
+.header__account:hover {
     background-color: black;
     color: white;
 }
+
 
 .header__navs .header__link:not(:last-child){
     margin-right: 20px;
@@ -50,6 +63,56 @@
 .header__login{
     padding-right: 20px;
 }
+
+.header__signout{
+    cursor: pointer;
+    color: black
+}
+
+.header__signout:hover{
+    text-decoration: underline;
+}
+
+
+
+/* modal styling */
+
+.header__modal-logo{
+    object-fit: contain;
+    width: 200px;
+}
+
+.header__modal-signin{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.header__modal-button{
+    margin-top: 20px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.header__modal-link{
+    cursor: pointer;
+    color: rgb(6, 6, 222);
+}
+
+.header__modal-text{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+
 
 
 
