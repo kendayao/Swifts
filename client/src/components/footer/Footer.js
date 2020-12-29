@@ -14,11 +14,15 @@ function Footer() {
                 </div>
                 <div className='footer__support'>
                     <h4>SUPPORT</h4>
-                    <Link className='footer__link' to='/terms'>
+                    <Link className='footer__link' to='/terms-and-conditions'>
                         <p>Terms and Conditions</p>
                     </Link>
-                    <p>Privacy Policy</p>
-                    <p>Return Policy</p>
+                    <Link className='footer__link' to='/privacy-policy'>
+                        <p>Privacy Policy</p>
+                    </Link>
+                    <Link className='footer__link' to='/return-policy'>
+                        <p>Return Policy</p>
+                    </Link>
                     <p>Frequently Asked Questionss</p>
                 </div>
                 <div className='footer__about'>

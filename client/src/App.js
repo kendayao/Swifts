@@ -11,6 +11,8 @@ import Item from './pages/itemPage/Item'
 import About from './pages/aboutPage/About'
 import Checkout from './pages/checkoutPage/Checkout'
 import Terms from './pages/termsPage/Terms'
+import Privacy from './pages/privacyPage/Privacy'
+import Return from './pages/returnPage/Return'
 
 function App() {
   return (
@@ -40,7 +42,19 @@ function App() {
             <Shop/>
           <Footer/>
         </Route>
-        < Route path='/terms'>
+        <Route path='/return-policy'>
+          <ScrollToTop />
+          <Header/>
+            <Return/>
+          <Footer/>
+        </Route>
+        < Route path='/privacy-policy'>
+          <ScrollToTop />
+          <Header/>
+            <Privacy/>
+          <Footer/>
+        </Route>
+        < Route path='/terms-and-conditions'>
           <ScrollToTop />
           <Header/>
             <Terms/>
