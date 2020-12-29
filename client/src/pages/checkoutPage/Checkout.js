@@ -30,13 +30,14 @@ function Checkout({shoppingCart, shoppingCartTotal}) {
                         />
                     ))}
                 </div>
-            </div>
-            {shoppingCart.length>0?
-            <div className='checkout__footer'>
-                <p>Total: ${shoppingCartTotal.toFixed(2)}</p>
-            </div>:
+                {shoppingCart.length>0?
+                <div className='checkout__total'>
+                    <p>Total: ${shoppingCartTotal.toFixed(2)}</p>
+                </div>:
             null
             }
+            </div>
+
         </div>
     )
 }

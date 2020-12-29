@@ -13,8 +13,18 @@
     transition: all 0.2s;
 }
 
+.checkoutItem__quantity--right,
+.checkoutItem__quantity--left{
+    cursor: pointer;
+}
+
+.checkoutItem__quantity--right:hover,
+.checkoutItem__quantity--left:hover{
+    font-weight: 500;
+}
+
 .checkoutItem__button:hover{
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .checkoutItem__left{
