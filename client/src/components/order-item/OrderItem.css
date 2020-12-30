@@ -1,0 +1,10 @@
+.orderItem >img{
+    width: 200px;
+    object-fit: contain;
+}
+
+.orderItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
