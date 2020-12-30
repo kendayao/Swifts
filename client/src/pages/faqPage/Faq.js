@@ -15,6 +15,9 @@ function Faq() {
             </div>
 
             <div className='faq__body'>
+                <div className='faq__header'>
+                    <p className='faq__title'>Frequently Asked Questions</p>
+                </div>
                {faqData.map(item=>(
                    <FaqItem key={item.faqId} id={item.faqId} question={item.question} answer={item.answer}/>
                ))}

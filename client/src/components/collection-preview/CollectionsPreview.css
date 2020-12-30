@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 80px;
+    margin-bottom: 5px;
 }
 
 .collectionPreview__heading > p{

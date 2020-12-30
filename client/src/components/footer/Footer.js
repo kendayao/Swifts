@@ -10,7 +10,7 @@ function Footer() {
                     <h4>CONTACT</h4>
                     <p>452 Hamilton Steet, Los Angeles, CA 90021</p>
                     <p>453-433-4222</p>
-                    <p>swifts@support.com</p>
+                    <p>support@swifts.com</p>
                 </div>
                 <div className='footer__support'>
                     <h4>SUPPORT</h4>
@@ -29,7 +29,7 @@ function Footer() {
                 </div>
                 <div className='footer__about'>
                     <h4>ABOUT</h4>
-                    <p>About Us</p>
+                    <Link className='footer__link' to='/about'><p>About Us</p></Link>
                     <p>Contact</p>
                 </div>
             </div>

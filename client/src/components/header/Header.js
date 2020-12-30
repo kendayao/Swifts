@@ -168,7 +168,7 @@ function Header({shoppingCartCount}) {
                     <Link to='/shop' className='header__link'>SHOP</Link>
                     <Link to='/about' className='header__link'>ABOUT US</Link>
                     <Link className='header__link'>CONTACT</Link>
-                    <Link className='header__link'>FAQ</Link>
+                    <Link to='/frequently-asked-questions' className='header__link'>FAQ</Link>
                 </div>
                 <div className='header__login'>
                     {user?<p>{user.email.toUpperCase()} <span className='header__signout' onClick={()=>auth.signOut()}>(SIGN OUT)</span></p>:

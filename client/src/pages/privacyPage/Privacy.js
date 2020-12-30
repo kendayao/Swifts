@@ -26,7 +26,7 @@ function Privacy() {
                     <p>When you provide us with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only.</p>
                     <p>If we ask for your personal information for a secondary reason, like marketing, we will either ask you directly for your expressed consent, or provide you with an opportunity to say no.</p>
                     <p>How do I withdraw my consent?</p>
-                    <p>If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at maxim.siebert@shopify.com or mailing us at: Swifts 452 Hamilton Steet, Los Angeles, CA 90021 </p>
+                    <p>If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at support@swifts.com or mailing us at: Swifts 452 Hamilton Steet, Los Angeles, CA 90021 </p>
                     <p className='privacy__subheading'>SECTION 3 - DISCLOSURE</p>
                     <p>We may disclose your personal information if we are required by law to do so or if you violate our Terms of Service.</p>
                     <p className='privacy__subheading'>SECTION 4 - PAYMENT</p>
