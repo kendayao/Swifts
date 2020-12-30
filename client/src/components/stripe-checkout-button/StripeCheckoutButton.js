@@ -5,20 +5,33 @@ import {connect} from 'react-redux'
 import { emptyCart } from '../../redux/cart/cart.actions';
 import {selectShoppingCart} from '../../redux/cart/cart.selectors'
 import { fetchRecentOrder } from '../../redux/order/order.actions';
+import {storePaymentInfo} from '../../redux/payment/payment.actions'
 import {useHistory} from 'react-router-dom'
+import axios from 'axios';
 
-function StripeCheckoutButton({price, emptyCart, shoppingCart, fetchRecentOrder}) {
+function StripeCheckoutButton({price, emptyCart, shoppingCart, fetchRecentOrder, storePaymentInfo}) {
     const priceForStripe=price*100;
     const publishableKey='pk_test_51Hd2wwD99Zg7DoCBCb1teG49Zx498uKexo7gQYEeyCu74jC5zILyS9i36ciltfcaUVMSzAVgQ8rj3bFb1wFgasrW00uILahd67'
 
     const history=useHistory();
 
     const onToken=token=>{
-        console.log(token)
-        fetchRecentOrder(shoppingCart)
-        history.replace('/order')
-        emptyCart();
-
+        storePaymentInfo(token)
+        axios({
+            url: 'payment',
+            method: 'post',
+            data:{
+                amount: priceForStripe,
+                token
+            }
+        }).then(response=>{
+            console.log(response)
+            fetchRecentOrder(shoppingCart)
+            history.replace('/order')
+            emptyCart();
+        }).catch(error=>{
+            console.log('Payment error: ', error);
+        })
     }
 
     return (
@@ -45,7 +58,8 @@ function StripeCheckoutButton({price, emptyCart, shoppingCart, fetchRecentOrder}
 
 const mapDispatchToProps=dispatch=>({
     emptyCart: ()=>(dispatch(emptyCart())),
-    fetchRecentOrder: order=>(dispatch(fetchRecentOrder(order)))
+    fetchRecentOrder: order=>(dispatch(fetchRecentOrder(order))),
+    storePaymentInfo: token=>(dispatch(storePaymentInfo(token)))
 })
 
 const mapStateToProps=state=>({

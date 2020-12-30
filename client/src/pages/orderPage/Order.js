@@ -1,11 +1,12 @@
 import React from 'react'
 import './Order.css'
-import {selectRecentOrder} from '../../redux/order/order.selectors'
+import {selectRecentOrder, selectRecentOrderTotal} from '../../redux/order/order.selectors'
 import {connect} from 'react-redux'
 import OrderItem from '../../components/order-item/OrderItem'
+import {selectPaymentInfo} from '../../redux/payment/payment.selectors'
 
-function Orders({recentOrder}) {
-
+function Orders({recentOrder, recentOrderTotal, paymentInfo}) {
+    console.log(paymentInfo)
     return (
         <div className='order'>
             <p className='order__heading'>Thank you for your order!</p>
@@ -26,15 +27,16 @@ function Orders({recentOrder}) {
                 <div className='order__footer'>
                     <div className='order__payment'>
                         <p>Payment Details</p>
-                        <p>Visa ******4242</p>
+                        <p>{paymentInfo.card.brand} ******{paymentInfo.card.last4}</p>
                     </div>
                     <div className="order__address">
                         <p>Billing Address</p>
-                        <p>123 Main Street</p>
-                        <p>Los Angeles, 90335</p>
+                        <p>{paymentInfo.card.name}</p>
+                        <p>{paymentInfo.card.address_line1}</p>
+                        <p>{paymentInfo.card.address_city}, {paymentInfo.card.address_zip}</p>
                     </div>
                     <div className='order__total'>
-                        <p>Order Total: $59.99</p>
+                        <p>Order Total: ${recentOrderTotal}</p>
                     </div>
                 </div>
                 
@@ -44,7 +46,9 @@ function Orders({recentOrder}) {
 }
 
 const mapStateToProps=state=>({
-    recentOrder: selectRecentOrder(state)
+    recentOrder: selectRecentOrder(state),
+    recentOrderTotal: selectRecentOrderTotal(state),
+    paymentInfo: selectPaymentInfo(state)
 })
 
 export default connect(mapStateToProps, null)(Orders)
