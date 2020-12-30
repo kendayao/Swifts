@@ -4,6 +4,8 @@ import {connect} from 'react-redux'
 import {selectShoppingCart, selectShoppingCartTotal} from '../../redux/cart/cart.selectors'
 import CheckoutItem from '../../components/checkout-item/CheckoutItem'
 import {Link} from 'react-router-dom'
+import StripeCheckoutButton from '../../components/stripe-checkout-button/StripeCheckoutButton'
+
 
 function Checkout({shoppingCart, shoppingCartTotal}) {
 
@@ -31,8 +33,9 @@ function Checkout({shoppingCart, shoppingCartTotal}) {
                     ))}
                 </div>
                 {shoppingCart.length>0?
-                <div className='checkout__total'>
-                    <p>Total: ${shoppingCartTotal.toFixed(2)}</p>
+                <div className='checkout__totalContainer'>
+                    <p className='checkout__total'>Total: ${shoppingCartTotal.toFixed(2)}</p>
+                    <StripeCheckoutButton price={shoppingCartTotal.toFixed(2)} />
                 </div>:
             null
             }

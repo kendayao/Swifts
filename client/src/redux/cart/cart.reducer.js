@@ -32,6 +32,11 @@ const cartReducer=(state=INITIAL_STATE, action)=>{
                     shoppingCartItem.productId!==action.payload
                 ))
             }
+        case 'EMPTY_CART':
+            return{
+                ...state,
+                shoppingCart: []
+            }
         default:
             return state;
     }

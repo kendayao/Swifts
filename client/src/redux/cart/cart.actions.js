@@ -19,4 +19,7 @@ export const clearItemFromCart=id=>({
     payload: id
 })
 
+export const emptyCart=()=>({
+    type: 'EMPTY_CART'
+})
     

@@ -1,0 +1,26 @@
+.stripeCheckoutButton__button{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 100px;
+    padding: 10px;
+    background-color: #000000;
+    -webkit-box-shadow: 1px 2px 5px 0 #000000;
+    -moz-box-shadow: 1px 2px 5px 0 #000000;
+    box-shadow: 1px 2px 5px 0 #000000;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    transition: all .05s;
+}
+
+.stripeCheckoutButton__button:focus{
+    outline: none;
+}
+
+.stripeCheckoutButton__button:hover{
+    background-color: white;
+    color: black;
+}
