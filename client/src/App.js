@@ -13,6 +13,7 @@ import Checkout from './pages/checkoutPage/Checkout'
 import Terms from './pages/termsPage/Terms'
 import Privacy from './pages/privacyPage/Privacy'
 import Return from './pages/returnPage/Return'
+import Faq from './pages/faqPage/Faq'
 
 function App() {
   return (
@@ -40,6 +41,12 @@ function App() {
           <ScrollToTop />
           <Header/>
             <Shop/>
+          <Footer/>
+        </Route>
+        <Route path='/frequently-asked-questions'>
+          <ScrollToTop />
+          <Header/>
+            <Faq/>
           <Footer/>
         </Route>
         <Route path='/return-policy'>

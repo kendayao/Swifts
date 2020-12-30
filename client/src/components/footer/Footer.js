@@ -23,7 +23,9 @@ function Footer() {
                     <Link className='footer__link' to='/return-policy'>
                         <p>Return Policy</p>
                     </Link>
-                    <p>Frequently Asked Questionss</p>
+                    <Link className='footer__link' to='/frequently-asked-questions'>
+                        <p>Frequently Asked Questions</p>
+                    </Link>
                 </div>
                 <div className='footer__about'>
                     <h4>ABOUT</h4>
