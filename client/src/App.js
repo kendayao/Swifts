@@ -15,6 +15,7 @@ import Privacy from './pages/privacyPage/Privacy'
 import Return from './pages/returnPage/Return'
 import Faq from './pages/faqPage/Faq'
 import Order from './pages/orderPage/Order'
+import Contact from './pages/contactPage/Contact'
 
 function App() {
   return (
@@ -54,6 +55,12 @@ function App() {
           <ScrollToTop />
           <Header/>
             <Faq/>
+          <Footer/>
+        </Route>
+        <Route path='/contact'>
+          <ScrollToTop />
+          <Header/>
+            <Contact/>
           <Footer/>
         </Route>
         <Route path='/return-policy'>

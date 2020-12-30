@@ -30,7 +30,7 @@ function Footer() {
                 <div className='footer__about'>
                     <h4>ABOUT</h4>
                     <Link className='footer__link' to='/about'><p>About Us</p></Link>
-                    <p>Contact</p>
+                    <Link className='footer__link' to='/contact'><p>Contact</p></Link>
                 </div>
             </div>
 

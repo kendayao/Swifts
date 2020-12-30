@@ -167,7 +167,7 @@ function Header({shoppingCartCount}) {
                     <Link to='/' className='header__link'>HOME</Link>
                     <Link to='/shop' className='header__link'>SHOP</Link>
                     <Link to='/about' className='header__link'>ABOUT US</Link>
-                    <Link className='header__link'>CONTACT</Link>
+                    <Link to='/contact' className='header__link'>CONTACT</Link>
                     <Link to='/frequently-asked-questions' className='header__link'>FAQ</Link>
                 </div>
                 <div className='header__login'>

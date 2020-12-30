@@ -1,0 +1,73 @@
+.contact{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.contact__logo{
+    text-align: center ;
+    margin-bottom: 40px;
+}
+
+.contact__logo > img{
+    width: 250px;
+}
+
+.contact__body{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+
+}
+
+.contact__header{
+    margin-bottom: 50px;
+
+}
+
+.contact__title{
+    font-size: 28px;
+}
+
+.contact__formSection{
+    background-color: #F7F7F7;
+    padding: 60px;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__form label{
+    margin-bottom: 3px;
+}
+
+.contact__form input{
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.contact__form input:focus,
+.contact__message:focus{
+    outline: none;
+}
+
+.contact__button{
+    margin-top: 10px;
+    width: 30%;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.contact__message{
+    padding: 5px;
+}
