@@ -3,14 +3,20 @@ import StripeCheckout from 'react-stripe-checkout'
 import './StripeCheckoutButton.css'
 import {connect} from 'react-redux'
 import { emptyCart } from '../../redux/cart/cart.actions';
+import {selectShoppingCart} from '../../redux/cart/cart.selectors'
+import { fetchRecentOrder } from '../../redux/order/order.actions';
+import {useHistory} from 'react-router-dom'
 
-function StripeCheckoutButton({price, emptyCart}) {
+function StripeCheckoutButton({price, emptyCart, shoppingCart, fetchRecentOrder}) {
     const priceForStripe=price*100;
     const publishableKey='pk_test_51Hd2wwD99Zg7DoCBCb1teG49Zx498uKexo7gQYEeyCu74jC5zILyS9i36ciltfcaUVMSzAVgQ8rj3bFb1wFgasrW00uILahd67'
 
+    const history=useHistory();
+
     const onToken=token=>{
         console.log(token)
-        alert('payment success')
+        fetchRecentOrder(shoppingCart)
+        history.replace('/order')
         emptyCart();
 
     }
@@ -19,7 +25,7 @@ function StripeCheckoutButton({price, emptyCart}) {
         <div className='stripeCheckoutButton'>
             <StripeCheckout 
                 label='Pay Now'
-                name='Swifts Checkout'
+                name='SWIFTS CHECKOUT'
                 billingAddress
                 shippingAddress
                 image='../../logo/swifts-small-logo.png'
@@ -38,7 +44,12 @@ function StripeCheckoutButton({price, emptyCart}) {
 
 
 const mapDispatchToProps=dispatch=>({
-    emptyCart: ()=>(dispatch(emptyCart()))
+    emptyCart: ()=>(dispatch(emptyCart())),
+    fetchRecentOrder: order=>(dispatch(fetchRecentOrder(order)))
 })
 
-export default connect(null, mapDispatchToProps)(StripeCheckoutButton)
+const mapStateToProps=state=>({
+    shoppingCart: selectShoppingCart(state)
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(StripeCheckoutButton)

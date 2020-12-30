@@ -14,6 +14,7 @@ import Terms from './pages/termsPage/Terms'
 import Privacy from './pages/privacyPage/Privacy'
 import Return from './pages/returnPage/Return'
 import Faq from './pages/faqPage/Faq'
+import Order from './pages/orderPage/Order'
 
 function App() {
   return (
@@ -29,6 +30,12 @@ function App() {
           <ScrollToTop />
           <Header/>
             <Collection />
+          <Footer/>
+        </Route>
+        <Route path='/order'>
+          <ScrollToTop />
+          <Header/>
+            <Order/>
           <Footer/>
         </Route>
         <Route path='/checkout'>
