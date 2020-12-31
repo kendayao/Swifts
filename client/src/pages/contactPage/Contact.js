@@ -27,9 +27,6 @@ function Contact() {
     
     return (
         <div className='contact'>
-            <div className='contact__logo'>
-                <img src='../../logo/main-swifts-logo.png' alt='swifts logo'/>
-            </div>
 
             <div className='contact__body'>
                 <div className='contact__header'>

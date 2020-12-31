@@ -27,7 +27,7 @@
 }
 
 .about__title{
-    font-size: 28px;
+    font-size: 35px;
 }
 
 .about__paragraph{
@@ -46,4 +46,24 @@ ul{
 
 .about__paragraph p{
     margin-bottom: 15px;
+}
+
+@media (max-width: 480px){
+    .about__body{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about__paragraph{
+        padding: 30px;
+        font-size: 12px;
+    }
+
+    .about__title{
+        font-size: 25px;
+        text-align: center;
+    }
+
+
 }

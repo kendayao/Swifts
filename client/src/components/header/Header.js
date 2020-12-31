@@ -181,11 +181,11 @@ function Header({shoppingCartCount}) {
             </div>
             <div className={toggleDropdown? 'header__dropdown--show header__dropdown': 'header__dropdown--hide  header__dropdown'}>
                 <div className='header__dropdownNavs'>
-                    <Link to='/' className='header__link'>HOME</Link>
-                    <Link to='/shop' className='header__link'>SHOP</Link>
-                    <Link to='/about' className='header__link'>ABOUT US</Link>
-                    <Link to='/contact' className='header__link'>CONTACT</Link>
-                    <Link to='/frequently-asked-questions' className='header__link'>FAQ</Link>
+                    <Link to='/' className='header__link' onClick={toggleDropdown?()=>setToggleDropdown(false):()=>setToggleDropdown(true)}>HOME</Link>
+                    <Link to='/shop' className='header__link' onClick={toggleDropdown?()=>setToggleDropdown(false):()=>setToggleDropdown(true)}>SHOP</Link>
+                    <Link to='/about' className='header__link' onClick={toggleDropdown?()=>setToggleDropdown(false):()=>setToggleDropdown(true)}>ABOUT US</Link>
+                    <Link to='/contact' className='header__link' onClick={toggleDropdown?()=>setToggleDropdown(false):()=>setToggleDropdown(true)}>CONTACT</Link>
+                    <Link to='/frequently-asked-questions' className='header__link' onClick={toggleDropdown?()=>setToggleDropdown(false):()=>setToggleDropdown(true)}>FAQ</Link>
                 </div>
             </div>
         </div>

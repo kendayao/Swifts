@@ -38,13 +38,13 @@
     text-decoration: none;
     color: black;
     padding: 10px;
-    transition: all .3s;
+    transition: all .2s;
 }
 
 .header__account{
     cursor: pointer;
     padding: 10px;
-    transition: all .3s;
+    transition: all .2s;
 }
 
 .header__link:hover,
