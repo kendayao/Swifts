@@ -124,7 +124,7 @@ function Header({shoppingCartCount}) {
          <center>
               <img className='header__modal-logo' src='../../logo/main-swifts-logo.png' atl='swifts logo'/>
           </center>
-           <form className="header__modal-signin">
+           <form className="header__modal-signup">
               <Input
                 className="header__modal-input" 
                 placeholder='email'

@@ -84,7 +84,8 @@
     width: 200px;
 }
 
-.header__modal-signin{
+.header__modal-signin,
+.header__modal-signup{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -155,6 +156,17 @@
 
     .header__dropdown--hide{
         display: none;
+    }
+
+    .header__login{
+        font-size: 10px;
+    }
+
+    .header__modal-signin,
+    .header__modal-signup{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
