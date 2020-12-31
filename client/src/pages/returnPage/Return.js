@@ -4,10 +4,6 @@ import './Return.css'
 function Return() {
     return (
         <div className='return'>
-            <div className='return__logo'>
-                <img src='../../logo/main-swifts-logo.png' alt='swifts logo'/>
-            </div>
-
             <div className='return__body'>
                 <div className='return__header'>
                     <p className='privacy__title'>Return Policy</p>

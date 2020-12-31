@@ -4,10 +4,6 @@ import './Privacy.css'
 function Privacy() {
     return (
         <div className='privacy'>
-            <div className='privacy__logo'>
-                <img src='../../logo/main-swifts-logo.png' alt='swifts logo'/>
-            </div>
-
             <div className='privacy__body'>
                 <div className='privacy__header'>
                     <p className='privacy__title'>Privacy Policy</p>

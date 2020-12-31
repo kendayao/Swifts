@@ -3,14 +3,6 @@
     margin-bottom: 150px;
 }
 
-.return__logo{
-    text-align: center ;
-    margin-bottom: 40px;
-}
-
-.return__logo > img{
-    width: 250px;
-}
 
 .return__body{
     width: 60%;
@@ -25,16 +17,37 @@
 }
 
 .return__title{
-    font-size: 28px;
+    font-size: 35px;
 }
 
 .return__paragraph{
     background-color: #F7F7F7;
     padding: 60px;
     font-size: 14px;
+    line-height: 145%;
 }
 
 .return__paragraph p{
     margin-bottom: 20px;
     
+}
+
+@media (max-width: 480px){
+    .return__body{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .return__paragraph{
+        padding: 30px;
+        font-size: 12px;
+    }
+
+    .return__title{
+        font-size: 25px;
+        text-align: center;
+    }
+
+
 }

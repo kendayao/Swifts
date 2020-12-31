@@ -4,15 +4,6 @@
 
 }
 
-.about__logo{
-    text-align: center ;
-    margin-bottom: 40px;
-}
-
-.about__logo > img{
-    width: 250px;
-}
-
 .about__body{
     width: 60%;
     margin-left: auto;
@@ -33,6 +24,7 @@
 .about__paragraph{
     background-color: #F7F7F7;
     padding: 60px;
+    line-height: 145%;
 }
 
 ul{

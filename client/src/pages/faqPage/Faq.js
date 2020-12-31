@@ -5,15 +5,9 @@ import FaqItem from '../../components/faq-item/FaqItem'
 
 function Faq() {
 
-    const [showAnswer, setShowAnswer]=useState(false);
-
 
     return (
         <div className='faq'>
-               <div className='faq__logo'>
-                <img src='../../logo/main-swifts-logo.png' alt='swifts logo'/>
-            </div>
-
             <div className='faq__body'>
                 <div className='faq__header'>
                     <p className='faq__title'>Frequently Asked Questions</p>

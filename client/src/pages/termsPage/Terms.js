@@ -4,10 +4,6 @@ import './Terms.css'
 function Terms() {
     return (
         <div className='terms'>
-             <div className='terms__logo'>
-                <img src='../../logo/main-swifts-logo.png' alt='swifts logo'/>
-            </div>
-
             <div className='terms__body'>
                 <div className='terms__header'>
                     <p className='terms__title'>Terms and Conditions</p>

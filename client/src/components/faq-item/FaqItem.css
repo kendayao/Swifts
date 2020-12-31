@@ -24,4 +24,15 @@
 .faq__answer{
     margin-top: 10px;
     margin-bottom: 20px;
+    line-height: 145%;
+}
+
+@media (max-width: 480px){
+    .faq__answer{
+        font-size: 14px;
+    }
+
+    .faq__question{
+        font-size: 14px;
+    }
 }

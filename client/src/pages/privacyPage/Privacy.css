@@ -3,15 +3,6 @@
     margin-bottom: 100px;
 }
 
-.privacy__logo{
-    text-align: center ;
-    margin-bottom: 40px;
-}
-
-.privacy__logo > img{
-    width: 250px;
-}
-
 .privacy__body{
     width: 60%;
     margin-left: auto;
@@ -25,13 +16,14 @@
 }
 
 .privacy__title{
-    font-size: 28px;
+    font-size: 35px;
 }
 
 .privacy__paragraph{
     background-color: #F7F7F7;
     padding: 60px;
     font-size: 14px;
+    line-height: 145%;
 }
 
 .privacy__heading{
@@ -46,4 +38,29 @@
 
 .privacy__subheading{
     margin-top: 50px;
+}
+
+@media (max-width: 480px){
+    .privacy__body{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .privacy__paragraph{
+        padding: 30px;
+        font-size: 12px;
+    }
+
+    .privacy__title{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .privacy__heading{
+        font-size: 20px;
+    }
+
+
+
 }
