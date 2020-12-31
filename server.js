@@ -44,7 +44,7 @@ app.get("*", (req, res) => {
 });
 
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost/swiftmessages", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://kendayao:"+process.env.DB_PASS+"@swiftscluster.cudla.mongodb.net/swifts?retryWrites=true&w=majority" || "mongodb://localhost/swiftmessages", { useNewUrlParser: true, useUnifiedTopology: true })
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
