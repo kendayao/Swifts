@@ -72,6 +72,14 @@
     padding: 5px;
 }
 
+.contact__success--hide{
+    display: none;
+}
+
+.contact__success--show{
+    display: block; 
+}
+
 @media (max-width: 480px){
     .contact__body{
         width: 90%;

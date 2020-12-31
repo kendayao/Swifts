@@ -7,6 +7,8 @@ function Contact() {
     const [name, setName]=useState('')
     const [email, setEmail]=useState('')
     const [message, setMessage]=useState('')
+    const [status, setStatus]=useState(200)
+    const [toggleAlert, setToggleAlert]=useState(false)
 
 
     function handleFormSubmit(event){
@@ -16,14 +18,20 @@ function Contact() {
             name: name,
             email: email,
             message: message
-        }).then(res=>console.log(res)).catch(err=>console.log(err))
-
+        }).then(res=>setStatus(res.status)).catch(err=>console.log(err))
         setName('')
         setEmail('')
         setMessage('')
-
-
+        if(status===200){
+            setToggleAlert(true)
+        }
+        setTimeout(()=>{
+            setToggleAlert(false);
+          }, 4000);
     }
+
+    console.log(status)
+    console.log(toggleAlert)
     
     return (
         <div className='contact'>
@@ -42,6 +50,7 @@ function Contact() {
                         <label htmlFor='message'>Message</label>
                         <textarea className='contact__message' type='text' id='message' name='message' rows='10' placeholder='type message here...' value={message} onChange={(event)=>setMessage(event.target.value)} required />
                         {name && email && message? <input className='contact__button' type='submit' value='Send Message' onClick={handleFormSubmit}/>: <input disabled className='contact__button' type='submit' value='Send Message'/>}
+                        <p className={toggleAlert?'contact__success--show' :'contact__success--hide'}>Message Sent!</p>
                     </form>
                 </div>
             </div>
