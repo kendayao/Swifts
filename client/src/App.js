@@ -58,7 +58,6 @@ function App() {
           <Footer/>
         </Route>
         <Route path='/contact'>
-          <ScrollToTop />
           <Header/>
             <Contact/>
           <Footer/>

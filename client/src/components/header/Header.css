@@ -1,5 +1,6 @@
 .header{
     font-size: 14px;
+    position: relative;
 }
 
 .header__SectionOne{
@@ -12,13 +13,14 @@
 .header__logo{
     width: 200px;
     height: 50px;
-    margin-left: -33px;
+    margin-left: -25px;
     object-fit: contain;
 }
 
 .header__cartSection{
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 .header__cartIcon{
@@ -41,7 +43,7 @@
 
 .header__account{
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
     transition: all .3s;
 }
 
@@ -111,8 +113,51 @@
     font-size: 14px;
 }
 
+.header__dropdown{
+    display: none
+}
 
 
+@media (min-width: 480px){
+    .header__menuIcon{
+        display: none !important;
+        
+    }
+
+
+}
+
+@media (max-width: 480px){
+    .header__navs{
+        display: none !important;
+    }
+
+    .header__dropdown{
+        width: 120px;
+        height: 180px;
+        background-color: white;
+        border: 1px solid black;
+        z-index: 100;
+        position: absolute;
+        margin-left: 30px;
+        top: 120px;
+        border-radius: 5px;
+    }
+
+    .header__dropdownNavs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__dropdown--show{
+        display: block
+    }
+
+    .header__dropdown--hide{
+        display: none;
+    }
+
+}
 
 
 

@@ -4,9 +4,9 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const cors=require("cors");
+const mongoose = require("mongoose");
 
 const stripe=require('stripe')(process.env.STRIPE_SECRET_KEY)
-
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -18,6 +18,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Define API routes here
+require('./routes/apiRoutes.js')(app)
 
 //Stripe Integration
 app.post('/payment',(req, res)=>{
@@ -41,6 +42,9 @@ app.post('/payment',(req, res)=>{
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
+
+// Connect to MongoDB
+mongoose.connect("mongodb://localhost/swiftmessages", { useNewUrlParser: true, useUnifiedTopology: true })
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);

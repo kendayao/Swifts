@@ -8,6 +8,7 @@ import Modal from '@material-ui/core/Modal';
 import { makeStyles } from '@material-ui/core/styles';
 import {Input } from '@material-ui/core';
 import {auth} from '../../firebase/firebase'
+import MenuIcon from '@material-ui/icons/Menu';
 
 // Modal Materila UI styling
 function getModalStyle() {
@@ -43,6 +44,7 @@ function Header({shoppingCartCount}) {
     const [user, setUser]=useState('')
     const [email, setEmail]=useState('');
     const [password, setPassword]=useState('');
+    const [toggleDropdown, setToggleDropdown]=useState(false);
 
     useEffect(() => {
         const unsubscribe=auth.onAuthStateChanged((authUser)=>{
@@ -163,6 +165,7 @@ function Header({shoppingCartCount}) {
                 </div>
             </div>
             <div className='header__SectionTwo'>
+                <MenuIcon className='header__menuIcon' style={{marginLeft: 30}} onClick={toggleDropdown?()=>setToggleDropdown(false):()=>setToggleDropdown(true)} />
                 <div className='header__navs'>
                     <Link to='/' className='header__link'>HOME</Link>
                     <Link to='/shop' className='header__link'>SHOP</Link>
@@ -174,6 +177,15 @@ function Header({shoppingCartCount}) {
                     {user?<p>{user.email.toUpperCase()} <span className='header__signout' onClick={()=>auth.signOut()}>(SIGN OUT)</span></p>:
                     <span className='header__account' onClick={()=>setOpenSignIn(true)}>ACCOUNT</span>
                     }
+                </div>
+            </div>
+            <div className={toggleDropdown? 'header__dropdown--show header__dropdown': 'header__dropdown--hide  header__dropdown'}>
+                <div className='header__dropdownNavs'>
+                    <Link to='/' className='header__link'>HOME</Link>
+                    <Link to='/shop' className='header__link'>SHOP</Link>
+                    <Link to='/about' className='header__link'>ABOUT US</Link>
+                    <Link to='/contact' className='header__link'>CONTACT</Link>
+                    <Link to='/frequently-asked-questions' className='header__link'>FAQ</Link>
                 </div>
             </div>
         </div>
