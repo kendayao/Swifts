@@ -7,24 +7,18 @@ function FaqItem({id, question, answer}) {
 
     const [openAnswer, setOpenAnswer]=useState(false);
 
-    function showAnswer(id){
-        if(id===id){
-            setOpenAnswer(true)
-        }
+    function showAnswer(){
+        setOpenAnswer(true)  
     }
 
 
-    function hideAnswer(id){
-        if(id===id){
-            setOpenAnswer(false)
-        }
+    function hideAnswer(){
+        setOpenAnswer(false)
     }
-
-    
 
     return (
         <div className='faqItem'>
-             <div className='faq__questionContainer' onClick={openAnswer?()=>hideAnswer(id):()=>showAnswer(id)}>
+             <div className='faq__questionContainer' onClick={openAnswer?()=>hideAnswer():()=>showAnswer()}>
                 <p className='faq__question'>{question}</p>
                 {openAnswer?<KeyboardArrowDownIcon/>:<KeyboardArrowUpIcon/>}
             </div>

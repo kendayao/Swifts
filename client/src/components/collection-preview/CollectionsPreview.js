@@ -27,9 +27,5 @@ function CollectionsPreview({items, routeName, title}) {
     )
 }
 
-const mapStateToProps=(state)=>({
-  
-})
-
 
 export default CollectionsPreview

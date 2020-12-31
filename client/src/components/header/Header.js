@@ -90,7 +90,7 @@ function Header({shoppingCartCount}) {
           
          <div style={modalStyle} className={classes.paper}>
          <center>
-              <img className='header__modal-logo' src='../../logo/main-swifts-logo.png' atl='swifts logo'/>
+              <img className='header__modal-logo' src='../../logo/main-swifts-logo.png' alt='swifts logo'/>
           </center>
            <form className="header__modal-signin">
               <Input
@@ -122,7 +122,7 @@ function Header({shoppingCartCount}) {
           
          <div style={modalStyle} className={classes.paper}>
          <center>
-              <img className='header__modal-logo' src='../../logo/main-swifts-logo.png' atl='swifts logo'/>
+              <img className='header__modal-logo' src='../../logo/main-swifts-logo.png' alt='swifts logo'/>
           </center>
            <form className="header__modal-signup">
               <Input
