@@ -91,6 +91,7 @@
 @media (max-width: 480px){
     .item{
         display: flex;
+        margin-top: 50px;
         
     }
 

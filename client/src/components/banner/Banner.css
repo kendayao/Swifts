@@ -100,4 +100,15 @@
         transform: translate(0); } 
 
     }
+
+@media (max-width: 480px){
+        .banner__header,
+        .banner__subheader{
+            font-size: 30px;
+        }
+
+        .banner__button{
+            font-size: 14px;
+        }
+    }
     

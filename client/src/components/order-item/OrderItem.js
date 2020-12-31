@@ -9,11 +9,15 @@ function OrderItem({image, name, price, quantity, size}) {
 
     return (
         <div className='orderItem'>
-            <img src={`../../images/${image}.png`} alt='product'/>
-            <p>{name}</p>
-            <p>Size: {size}</p>
-            <p>Qty: {quantity}</p>
-            <p>{itemPrice}</p>
+            <div className='orderItem__left'>
+                <img src={`../../images/${image}.png`} alt='product'/>  
+            </div>
+           <div className='orderItem__right'>
+                <p>{name}</p>
+                <p>Size: {size}</p>
+                <p>Qty: {quantity}</p>
+                <p>{itemPrice}</p>
+           </div>
         </div>
     )
 }

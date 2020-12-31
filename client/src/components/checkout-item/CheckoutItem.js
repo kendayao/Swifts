@@ -17,7 +17,7 @@ function CheckoutItem({image, id, name, size, quantity, price, clearItemFromCart
             <div className='checkoutItem__right'>
                 <p className='checkoutItem__name'>{name}</p>
                 <p className='checkoutItem__size'>Size: {size}</p>
-                <p className='checkoutItem__quantity'><span className='checkoutItem__quantity--left' onClick={()=>removeItemFromCart(id)}>&lt;</span> {quantity} <span className='checkoutItem__quantity--right' onClick={()=>addItemToCart(id)}>&gt;</span></p>
+                <p className='checkoutItem__quantity'>Qty: <span className='checkoutItem__quantity--left' onClick={()=>removeItemFromCart(id)}>&lt;</span> {quantity} <span className='checkoutItem__quantity--right' onClick={()=>addItemToCart(id)}>&gt;</span></p>
                 <p className='checkoutItem__price'>{itemPrice.toFixed(2)}</p>
             </div> 
         </div>

@@ -78,3 +78,15 @@
     background-color: black;
     color:white;
 }
+
+@media (max-width: 480px){
+    .home__category p{
+        font-size: 14px;
+    }
+
+    .home__preview{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+}

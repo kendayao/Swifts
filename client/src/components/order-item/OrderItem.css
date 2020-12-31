@@ -8,3 +8,27 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.orderItem__right{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    align-items: center;
+}
+
+.orderItem__left img{
+    width: 250px;
+}
+
+@media (max-width: 480px){
+    .orderItem__right{
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+        font-size: 13px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+}

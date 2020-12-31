@@ -40,3 +40,24 @@
     justify-content: space-between;
     flex: 1
 }
+
+@media (max-width: 480px){
+    .checkout__body{
+        width: 95%;
+    }
+
+    .checkout__title{
+        text-align: center;
+    }
+
+    .checkoutItem__right{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        flex: 1;
+        height: 120px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+}
