@@ -1,9 +1,9 @@
 import React from 'react'
 import './Collection.css'
+import Card from '../../components/card/Card'
 import{useParams} from 'react-router-dom'
 import {selectCollections} from '../../redux/shop/shop.selectors'
 import {connect} from 'react-redux'
-import Card from '../../components/card/Card'
 
 function Collection({collections}) {
     const { CollectionId }=useParams();
@@ -23,7 +23,6 @@ function Collection({collections}) {
                     />
                 ))}
             </div>
-            
         </div>
     )
 }

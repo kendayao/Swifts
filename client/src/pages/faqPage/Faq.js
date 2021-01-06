@@ -7,13 +7,11 @@ function Faq() {
 
     const [faqData, setFaqData]=useState([]);
 
-
     useEffect(()=>{
         API.getFaqs().then(res=>{
           console.log(res)
           setFaqData(res.data)
         }).catch(err=>console.log(err))
-    
       },[])
    
     return (

@@ -1,9 +1,9 @@
 import React from 'react'
 import './Order.css'
-import {selectRecentOrder, selectRecentOrderTotal} from '../../redux/order/order.selectors'
-import {connect} from 'react-redux'
 import OrderItem from '../../components/order-item/OrderItem'
+import {selectRecentOrder, selectRecentOrderTotal} from '../../redux/order/order.selectors'
 import {selectPaymentInfo} from '../../redux/payment/payment.selectors'
+import {connect} from 'react-redux'
 
 function Orders({recentOrder, recentOrderTotal, paymentInfo}) {
     console.log(paymentInfo)

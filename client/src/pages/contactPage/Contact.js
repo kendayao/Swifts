@@ -10,7 +10,6 @@ function Contact() {
     const [status, setStatus]=useState(200)
     const [toggleAlert, setToggleAlert]=useState(false)
 
-
     function handleFormSubmit(event){
         event.preventDefault();
 
@@ -29,13 +28,9 @@ function Contact() {
             setToggleAlert(false);
           }, 4000);
     }
-
-    console.log(status)
-    console.log(toggleAlert)
     
     return (
         <div className='contact'>
-
             <div className='contact__body'>
                 <div className='contact__header'>
                     <p className='contact__title'>Contact Us</p>

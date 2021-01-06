@@ -8,7 +8,6 @@ function About() {
                 <div className='about__header'>
                     <p className='about__title'>About us</p>
                 </div>
-
                 <div className='about__paragraph'>
                     <p>
                     Here at Swifts we like things simple! Who doesn’t? The founder of Swifts has a simple fashion style. One day while browsing around different shoe stores looking for a pair of casual walking shoes, he noticed that there wasn’t a huge selection of simple styled shoes. Most of the shoes he saw were flashy with over the top bright colors. The shoes that he saw that matched his style were from popular brands,  very expensive, and not very comfortable. This is when Swifts was born! 
@@ -26,11 +25,7 @@ function About() {
                     </ul>
 
                 </div>
-            </div>
-            
-            
-
-            
+            </div>  
         </div>
     )
 }

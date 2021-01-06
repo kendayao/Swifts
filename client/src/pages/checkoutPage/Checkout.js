@@ -1,15 +1,12 @@
 import React from 'react'
 import './Checkout.css'
+import CheckoutItem from '../../components/checkout-item/CheckoutItem'
+import StripeCheckoutButton from '../../components/stripe-checkout-button/StripeCheckoutButton'
 import {connect} from 'react-redux'
 import {selectShoppingCart, selectShoppingCartTotal} from '../../redux/cart/cart.selectors'
-import CheckoutItem from '../../components/checkout-item/CheckoutItem'
 import {Link} from 'react-router-dom'
-import StripeCheckoutButton from '../../components/stripe-checkout-button/StripeCheckoutButton'
-
 
 function Checkout({shoppingCart, shoppingCartTotal}) {
-
-
     return (
         <div className='checkout'>
             <div className='checkout__body'>
@@ -17,7 +14,6 @@ function Checkout({shoppingCart, shoppingCartTotal}) {
                     {shoppingCart.length>0?<p className='checkout__link--big'>Shopping Cart</p>:
                     <p className='checkout__link--small'>Shopping cart is empty. Click <Link to='/shop'>here</Link> to continue shopping </p>
                     }
-                    
                 </div>
                 <div className='checkout__content'>
                     {shoppingCart.map(item=>(
