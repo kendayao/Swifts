@@ -111,7 +111,7 @@ function Header({shoppingCartCount}) {
               />
               <div className='header__modal-notice'>
                 <p>*You may sign in using test credentials below or create your own account*</p>
-                <p>email: cool_coder@email.com password: 123456</p>
+                <p>email: cool_coder@email.com password: 12341234</p>
               </div>
               <button className="header__modal-button" type="submit" onClick={signIn}>Sign In</button>
               <p className="header__modal-text">Don't have an account? <span className='header__modal-link' onClick={()=>{setOpenSignUp(true);setOpenSignIn(false)}}>Sign up</span></p>
