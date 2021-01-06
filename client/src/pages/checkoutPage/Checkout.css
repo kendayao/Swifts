@@ -31,6 +31,14 @@
     justify-content: flex-end;
 }
 
+.checkout__notice{
+    font-size: 12px;
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 145%;
+}
+
 .stripeCheckoutButton{
     display: flex;
     justify-content: flex-end;

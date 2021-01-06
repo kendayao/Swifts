@@ -27,7 +27,6 @@
     color: black;
 }
 
-
 .header__SectionTwo{
     display: flex;
     justify-content: space-between;
@@ -89,7 +88,7 @@
 }
 
 .header__modal-button{
-    margin-top: 20px;
+    margin-top: 10px;
     width: 50%;
     margin-right: auto;
     margin-left: auto;
@@ -103,6 +102,13 @@
 .header__modal-link{
     cursor: pointer;
     color: rgb(6, 6, 222);
+}
+
+.header__modal-notice{
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .header__modal-text{
