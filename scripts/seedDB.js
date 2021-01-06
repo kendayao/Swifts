@@ -59,11 +59,16 @@ const faqSeed=[
         },
         {
         faqId: 11,
+        question: 'Can I change the shipping address after my order is placed?',
+        answer: 'We do as much as we can to speed up the processing time and shipping time for all orders, so there is a very small window for us to correct or change the shipping address. If you think you provided the incorrect shipping address or would like to change the shipping address, please contact us immediately at support@swifts.com'
+        },
+        {
+        faqId: 12,
         question: 'What forms of payments do you accept',
         answer: 'All major credit cards.'
         },
         {
-        faqId: 12,
+        faqId: 13,
         question: 'I never received my refund?',
         answer: 'Once a refund is approved, we will email you letting you know that the refund has been issued. Please note that all refunds are returned to the original form of payment. Please allow 3-5 business days for the refund to be processed and returned to the original form of payment.'
         },
