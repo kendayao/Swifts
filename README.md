@@ -23,6 +23,7 @@ Swifts is a fictional shoe ecommerce application built using the MERN (MongoDB, 
 - Redux
 - React Selectors
 - React Hooks
+- Firebase (user authentication)
 - Mongoose
 - MongoDB
 - Express
