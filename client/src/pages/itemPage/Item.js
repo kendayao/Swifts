@@ -17,15 +17,12 @@ function Item({collections, addToCart, shoppingCart}) {
     const collectionItems=collections[CollectionId]
     const product=collectionItems.items.find(item=>ItemId===item.refName)
 
-   
     const item={
         ...product,
         size: parseInt(size),
         quantity: parseInt(quantity)
        }
 
- 
-    
     return (
         <div className='item'>
                 

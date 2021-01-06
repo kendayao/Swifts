@@ -20,7 +20,7 @@
     line-height: 145%;
 }
 
-@media (max-width: 480px){
+@media (max-width: 767px){
     .faq__body{
         width: 90%;
         margin-left: auto;

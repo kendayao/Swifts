@@ -72,7 +72,6 @@ const faqSeed=[
         question: 'I never received my refund?',
         answer: 'Once a refund is approved, we will email you letting you know that the refund has been issued. Please note that all refunds are returned to the original form of payment. Please allow 3-5 business days for the refund to be processed and returned to the original form of payment.'
         },
-    
     ]
     
 db.Faq.remove({})

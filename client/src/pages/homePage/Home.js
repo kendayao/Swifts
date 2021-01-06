@@ -35,7 +35,6 @@ function Home({collections}) {
                     </div>
                 </div>
 
-                
                 <div className='home__preview'>
                     <div className='home__preview-title'>
                         <p>Top Sellers</p>
@@ -52,7 +51,6 @@ function Home({collections}) {
                                 route={item.route}
                             />
                         ))}
-                        
                     </div>
                 </div>
             </div>

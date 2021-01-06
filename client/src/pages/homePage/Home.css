@@ -84,7 +84,7 @@
     color:white;
 }
 
-@media (max-width: 480px){
+@media (max-width: 767px){
     .home__category p{
         font-size: 25px;
     }

@@ -3,7 +3,6 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import "./App.css";
 import Home from './pages/homePage/Home'
-import {Route, Switch} from 'react-router-dom'
 import Shop from './pages/shopPage/Shop'
 import ScrollToTop from './components/scroll/ScrollToTop'
 import Collection from './pages/collectionPage/Collection'
@@ -16,6 +15,7 @@ import Return from './pages/returnPage/Return'
 import Faq from './pages/faqPage/Faq'
 import Order from './pages/orderPage/Order'
 import Contact from './pages/contactPage/Contact'
+import {Route, Switch} from 'react-router-dom'
 
 function App() {
   return (

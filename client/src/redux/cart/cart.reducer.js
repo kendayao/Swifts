@@ -10,7 +10,6 @@ const cartReducer=(state=INITIAL_STATE, action)=>{
             return{
                 ...state,
                 shoppingCart: [...state.shoppingCart, action.payload]
-                
             }
 
         case 'ADD_ITEM_TO_CART':
@@ -23,8 +22,8 @@ const cartReducer=(state=INITIAL_STATE, action)=>{
             return{
                 ...state,
                 shoppingCart: removeItemFromCart(state.shoppingCart, action.payload)
-
             }
+
         case 'CLEAR_ITEM_FROM_CART':
             return{
                 ...state,
@@ -32,11 +31,13 @@ const cartReducer=(state=INITIAL_STATE, action)=>{
                     shoppingCartItem.productId!==action.payload
                 ))
             }
+
         case 'EMPTY_CART':
             return{
                 ...state,
                 shoppingCart: []
             }
+            
         default:
             return state;
     }

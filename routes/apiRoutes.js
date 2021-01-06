@@ -3,6 +3,7 @@ const stripe=require('stripe')(process.env.STRIPE_SECRET_KEY)
 
 
 module.exports=function(app){
+    // message
     app.post("/api/messages", function(req,res){
         db.Messages.create(req.body, function(err,data){
             if (err){
@@ -12,9 +13,11 @@ module.exports=function(app){
             }
         })
     })
+    // faq
     app.get('/api/faqs', function(req, res){
         db.Faq.find({}).then(data=>res.json(data)).catch(err=>console.log(err))
     })
+    // stripe 
     app.post('/payment',(req, res)=>{
         const body={
           source: req.body.token.id,
