@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import './Header.css'
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
+import { makeStyles } from '@material-ui/core/styles';
+import {Input } from '@material-ui/core';
+import Modal from '@material-ui/core/Modal';
+import MenuIcon from '@material-ui/icons/Menu';
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {selectShoppingCartCount} from '../../redux/cart/cart.selectors'
-import Modal from '@material-ui/core/Modal';
-import { makeStyles } from '@material-ui/core/styles';
-import {Input } from '@material-ui/core';
 import {auth} from '../../firebase/firebase'
-import MenuIcon from '@material-ui/icons/Menu';
 
 // Modal Materila UI styling
 function getModalStyle() {

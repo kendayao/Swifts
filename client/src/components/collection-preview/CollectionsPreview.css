@@ -39,7 +39,7 @@
 }
 
 
-@media (max-width: 480px){
+@media (max-width: 767px){
     .collectionPreview__heading{
         margin-top: 30px;
     }

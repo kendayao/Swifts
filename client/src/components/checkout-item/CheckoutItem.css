@@ -41,7 +41,7 @@
     flex: 1
 }
 
-@media (max-width: 480px){
+@media (max-width: 767px){
     .checkout__body{
         width: 95%;
     }

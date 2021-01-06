@@ -27,7 +27,7 @@
     line-height: 145%;
 }
 
-@media (max-width: 480px){
+@media (max-width: 767px){
     .faq__answer{
         font-size: 14px;
     }

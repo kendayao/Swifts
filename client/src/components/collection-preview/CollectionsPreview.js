@@ -27,5 +27,4 @@ function CollectionsPreview({items, routeName, title}) {
     )
 }
 
-
 export default CollectionsPreview

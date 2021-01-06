@@ -3,7 +3,6 @@ import './CheckoutItem.css'
 import {clearItemFromCart, removeItemFromCart, addItemToCart} from '../../redux/cart/cart.actions'
 import {connect} from 'react-redux'
 
-
 function CheckoutItem({image, id, name, size, quantity, price, clearItemFromCart, removeItemFromCart,addItemToCart}) {
 
     const itemPrice=quantity*price

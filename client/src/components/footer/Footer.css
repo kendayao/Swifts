@@ -23,8 +23,6 @@
     text-decoration: none;
 }
 
-
-
 .footer__contact p,
 .footer__support p,
 .footer__about p{
@@ -32,8 +30,6 @@
     color: rgb(128, 128, 128);
     font-size: 13px;
 }
-
-
 
 .footer__bottomSection{
     text-align: center;

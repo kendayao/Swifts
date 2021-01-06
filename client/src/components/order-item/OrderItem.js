@@ -3,7 +3,6 @@ import './OrderItem.css'
 
 function OrderItem({image, name, price, quantity, size}) {
 
-    
     const itemPrice=quantity*price
     itemPrice.toFixed(2)
 

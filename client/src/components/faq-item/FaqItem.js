@@ -3,7 +3,7 @@ import './FaqItem.css'
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
-function FaqItem({id, question, answer}) {
+function FaqItem({question, answer}) {
 
     const [openAnswer, setOpenAnswer]=useState(false);
 
