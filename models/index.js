@@ -1,5 +1,6 @@
 module.exports={
-    Messages: require('./Messages')
+    Messages: require('./Messages'),
+    Faq: require('./Faqs')
 }
 
 ///test

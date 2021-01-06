@@ -9,8 +9,10 @@ module.exports=function(app){
             }else{
                 res.json(data)
             }
+        })
     })
-})
-
+    app.get('/api/faqs', function(req, res){
+        db.Faq.find({}).then(data=>res.json(data)).catch(err=>console.log(err))
+    })
 }
 
