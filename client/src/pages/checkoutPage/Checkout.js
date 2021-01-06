@@ -34,7 +34,7 @@ function Checkout({shoppingCart, shoppingCartTotal}) {
                     <StripeCheckoutButton price={shoppingCartTotal.toFixed(2)} />
                     <div className='checkout__notice'>
                         <p>*This is not a real ecommerce store. Do not enter a real credit card. Please use the following test credit card for payments*</p>
-                        <p>4242 4242 4242 4242 - Exp:04/24 - CVV: 123 ZIP: 12345</p>
+                        <p>4242 4242 4242 4242 - Exp:04/24 - CVC:123</p>
                     </div>
                 </div>:
             null
