@@ -14,7 +14,7 @@ function Home({collections}) {
             <Banner />
 
             <div className='home__body'>
-                <div className='home__row'>
+                <div className='home__rowTop'>
                     <div className='home__category'>
                         <Link to='/shop/casual'>
                             <p>CASUAL</p>

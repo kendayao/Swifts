@@ -42,7 +42,7 @@ const SHOP_DATA={
             },
             {
                 productId: 5,
-                name: 'Max Swifts Black-Green',
+                name: 'Max Swifts Green',
                 refName: 'max-swifts-black-green',
                 color: 'Black-Green',
                 route: 'shop/casual/max-swifts-black-green',
@@ -51,7 +51,7 @@ const SHOP_DATA={
             },
             {
                 productId: 6,
-                name: 'Max Swifts Black-Red',
+                name: 'Max Swifts Red',
                 refName: 'max-swifts-black-red',
                 color: 'Black-Red',
                 route: 'shop/casual/max-swifts-black-red',

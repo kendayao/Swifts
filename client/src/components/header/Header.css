@@ -119,16 +119,15 @@
 }
 
 
-@media (min-width: 480px){
+@media (min-width: 767px){
     .header__menuIcon{
         display: none !important;
-        
     }
 
 
 }
 
-@media (max-width: 480px){
+@media (max-width: 767px){
     .header__navs{
         display: none !important;
     }
@@ -143,6 +142,8 @@
         margin-left: 30px;
         top: 120px;
         border-radius: 5px;
+        padding-top: 7px;
+        padding-bottom: 7px;
     }
 
     .header__dropdownNavs{
@@ -167,6 +168,10 @@
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .MuiSvgIcon-root.header__menuIcon{
+        cursor: pointer;
     }
 
 }

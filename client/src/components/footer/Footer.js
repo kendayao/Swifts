@@ -3,6 +3,10 @@ import './Footer.css'
 import {Link} from 'react-router-dom'
 
 function Footer() {
+
+    var date= new Date();
+    var year=date.getFullYear();
+    
     return (
         <div className='footer'>
             <div className='footer__topSection'>
@@ -35,7 +39,7 @@ function Footer() {
             </div>
 
             <div className='footer__bottomSection'>
-                <p>&#169;2020, Swifts</p>
+                <p>&#169;{year}, Swifts</p>
             </div>
 
         </div>
