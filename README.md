@@ -70,6 +70,8 @@ For any questions, please contact kendayao at kendayao@gmail.com
 
 Deployed application link: https://swifts.herokuapp.com/
 
+Video demo link: https://giphy.com/gifs/UyAWnFOWfUCn3w10Jt/fullscreen
+
 <img src="client/public/images/swifts-main-image.png" width="650" height="400">
 
 
