@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Order.css'
 import OrderItem from '../../components/order-item/OrderItem'
 import {selectRecentOrder, selectRecentOrderTotal} from '../../redux/order/order.selectors'
@@ -6,7 +6,23 @@ import {selectPaymentInfo} from '../../redux/payment/payment.selectors'
 import {connect} from 'react-redux'
 
 function Orders({recentOrder, recentOrderTotal, paymentInfo}) {
-    console.log(paymentInfo)
+    
+    useEffect(() => {
+        const sendEmail=(serviceId, templateId, variables)=>{
+            window.emailjs.send(serviceId, templateId, variables).then(res=>{
+                console.log('email sent')
+            }).catch(err=>console.log(err))
+        }
+        sendEmail('service_gprdvaj','template_rb3ew4v', 
+        {
+            to_name: paymentInfo.card.name, 
+            message: 'We received your Swifts order!', 
+            email: paymentInfo.email, 
+            order: recentOrder.map(orderItem=>(
+                orderItem.name
+            ))} )
+    }, [paymentInfo])
+    
     return (
         <div className='order'>
             <p className='order__heading'>Thank you for your order!</p>

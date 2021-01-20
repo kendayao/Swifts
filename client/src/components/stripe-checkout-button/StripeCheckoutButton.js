@@ -29,6 +29,7 @@ function StripeCheckoutButton({price, emptyCart, shoppingCart, fetchRecentOrder,
             fetchRecentOrder(shoppingCart)
             history.replace('/order')
             emptyCart();
+            
         }).catch(error=>{
             console.log('Payment error: ', error);
         })
@@ -63,7 +64,7 @@ const mapDispatchToProps=dispatch=>({
 })
 
 const mapStateToProps=state=>({
-    shoppingCart: selectShoppingCart(state)
+    shoppingCart: selectShoppingCart(state),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(StripeCheckoutButton)
